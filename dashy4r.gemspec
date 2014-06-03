@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
     "lib/dashy/runner.rb",
     "lib/dashy4r.rb"
   ]
-  s.homepage = "http://github.com/fabiopereira/dashy4r"
+  s.homepage = "http://github.com/thoughtworks/dashy4r"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new("~> 1.8.7")

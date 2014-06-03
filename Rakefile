@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "dashy4r"
-  gem.homepage = "http://github.com/fabiopereira/dashy4r"
+  gem.homepage = "http://github.com/thoughtworks/dashy4r"
   gem.license = "MIT"
   gem.summary = "dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/thoughtworks/dashy)"
   gem.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
