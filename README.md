@@ -5,9 +5,14 @@ dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://githu
 
 ## Documentation
 
+### Installing
+    gem install dashy4r
+
+## Usage
+
 ### Configuration file
 Create a file dashy_config.yml
-```yaml
+```
 app_id: <YOUR_APP_ID>
 url: <YOUR_DASHY_URL>
 timeout: <YOUR_TIMEOUT_IN_SECONDS>
@@ -18,10 +23,10 @@ timeout: <YOUR_TIMEOUT_IN_SECONDS>
   Dashy::Base.enable_with_config '<path for your dashy_config.yml>'
 ```
 
-### Usage
-
 Simplest way of reporting status. It will fail if any exception is raised
 ```ruby
+  require 'dashy4r'
+
   Dashy::Runner.run_and_report_status_for do
     # your code goes here
     run_something_that_you_want_to_report_status
@@ -30,6 +35,8 @@ Simplest way of reporting status. It will fail if any exception is raised
 
 A more complete Runner setup where you can set options and also validate the response the response is the return of your block to run
 ```ruby
+  require 'dashy4r'
+
   Dashy::Runner.config_and_run do |runner|
     runner.with_options  :environment => 'My Environment', :endpoint => 'My Web Service'
     runner.block_to_run do
