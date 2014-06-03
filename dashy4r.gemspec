@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "dashy4r"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThoughtWorks"]
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "dashy4r.gemspec",
     "lib/dashy/base.rb",
     "lib/dashy/config_yml.rb",
     "lib/dashy/rest_interface.rb",
@@ -32,6 +33,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/fabiopereira/dashy4r"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
+  s.required_ruby_version = Gem::Requirement.new("~> 1.8.7")
   s.rubygems_version = "2.0.14"
   s.summary = "dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/thoughtworks/dashy)"
 
