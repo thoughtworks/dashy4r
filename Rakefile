@@ -21,6 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
   gem.email = "aduarte@thoughtworks.com"
   gem.authors = ["ThoughtWorks"]
+  gem.required_ruby_version = '~> 1.8.7'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
