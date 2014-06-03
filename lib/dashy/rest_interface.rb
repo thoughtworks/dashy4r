@@ -1,4 +1,5 @@
-require 'timeout'
+require 'rubygems'
+require 'system_timer'
 require 'rest_client'
 
 module Dashy
@@ -13,6 +14,7 @@ module Dashy
           RestClient.post "#{config.url}/requests/#{config.app_id}", :request => options
         end
       rescue => e
+        puts e
       end
     end
   end

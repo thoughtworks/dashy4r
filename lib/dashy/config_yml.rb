@@ -2,7 +2,7 @@ require 'yaml'
 
 module Dashy
   class ConfigYml
-    DEFAULT_TIMEOUT = 1
+    DEFAULT_TIMEOUT = 5
 
     def initialize file_path
       @yaml ||= YAML.load_file(file_path)
