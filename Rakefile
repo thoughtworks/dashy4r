@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "dashy4r"
   gem.homepage = "http://github.com/fabiopereira/dashy4r"
   gem.license = "MIT"
-  gem.summary = "dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/rafbgarcia/dashy)"
+  gem.summary = "dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/thoughtworks/dashy)"
   gem.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
-  gem.email = "alabeduarte@gmail.com"
-  gem.authors = ["Alabê Duarte"]
+  gem.email = "aduarte@thoughtworks.com"
+  gem.authors = ["ThoughtWorks"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
