@@ -9,7 +9,6 @@ module Dashy
       return unless Dashy::Base.enabled?
       begin
         config = Dashy::Base.config
-        # TODO: change SystemTimer to use Timeout::timeout instead for ruby ~>1.9
         SystemTimer.timeout_after(config.timeout) do
           RestClient.post "#{config.url}/requests/#{config.app_id}", :request => options
         end
