@@ -3,6 +3,8 @@ dashy4r
 
 dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/thoughtworks/dashy)
 
+[![Build Status](https://snap-ci.com/thoughtworks/dashy4r/branch/master/build_image)](https://snap-ci.com/thoughtworks/dashy4r/branch/master)
+
 ## Documentation
 
 ### Installing
