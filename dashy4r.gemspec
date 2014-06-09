@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "dashy4r"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThoughtWorks"]
-  s.date = "2014-06-03"
+  s.date = "2014-06-09"
   s.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
   s.email = "aduarte@thoughtworks.com"
   s.extra_rdoc_files = [
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
+    ".ruby-version",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -28,7 +29,11 @@ Gem::Specification.new do |s|
     "lib/dashy/config_yml.rb",
     "lib/dashy/rest_interface.rb",
     "lib/dashy/runner.rb",
-    "lib/dashy4r.rb"
+    "lib/dashy4r.rb",
+    "spec/dashy/base_spec.rb",
+    "spec/dashy/rest_interface_spec.rb",
+    "spec/dashy_config.yml",
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/thoughtworks/dashy4r"
   s.licenses = ["MIT"]
@@ -41,27 +46,33 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<system_timer>, ["~> 1.2.4"])
-      s.add_development_dependency(%q<mime-types>, ["~> 1.16"])
-      s.add_development_dependency(%q<rest-client>, ["~> 1.6.7"])
-      s.add_development_dependency(%q<nokogiri>, ["~> 1.5.10"])
+      s.add_runtime_dependency(%q<system_timer>, ["~> 1.2.4"])
+      s.add_runtime_dependency(%q<mime-types>, ["~> 1.16"])
+      s.add_runtime_dependency(%q<rest-client>, ["~> 1.6.7"])
+      s.add_runtime_dependency(%q<nokogiri>, ["~> 1.5.10"])
+      s.add_runtime_dependency(%q<webmock>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_development_dependency(%q<rspec>, ["~> 3.0.0"])
     else
       s.add_dependency(%q<system_timer>, ["~> 1.2.4"])
       s.add_dependency(%q<mime-types>, ["~> 1.16"])
       s.add_dependency(%q<rest-client>, ["~> 1.6.7"])
       s.add_dependency(%q<nokogiri>, ["~> 1.5.10"])
+      s.add_dependency(%q<webmock>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_dependency(%q<rspec>, ["~> 3.0.0"])
     end
   else
     s.add_dependency(%q<system_timer>, ["~> 1.2.4"])
     s.add_dependency(%q<mime-types>, ["~> 1.16"])
     s.add_dependency(%q<rest-client>, ["~> 1.6.7"])
     s.add_dependency(%q<nokogiri>, ["~> 1.5.10"])
+    s.add_dependency(%q<webmock>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+    s.add_dependency(%q<rspec>, ["~> 3.0.0"])
   end
 end
 
