@@ -29,7 +29,7 @@ describe Dashy::RestInterface do
 
     Dashy::RestInterface.report_status failure_report
 
-    expect(WebMock).to have_requested(:post, dashy_local_url).with success_report
+    expect(WebMock).to have_requested(:post, dashy_local_url).with failure_report
   end
 
   def stub_report_request!(status)
