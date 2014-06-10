@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "dashy4r"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThoughtWorks"]
-  s.date = "2014-06-09"
+  s.date = "2014-06-10"
   s.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
   s.email = "aduarte@thoughtworks.com"
   s.extra_rdoc_files = [
@@ -39,11 +39,11 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new("~> 1.8.7")
-  s.rubygems_version = "2.0.14"
+  s.rubygems_version = "1.8.21"
   s.summary = "dashy4r is a gem that helps you use ruby to integrate with [Dashy](https://github.com/thoughtworks/dashy)"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 4
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<system_timer>, ["~> 1.2.4"])
