@@ -10,7 +10,7 @@ module Dashy
       begin
         config = Dashy::Base.config
         SystemTimer.timeout_after(config.timeout) do
-          RestClient.post "#{config.url}/requests/#{config.app_id}", :request => options
+          RestClient.post "#{config.url}/api/requests/#{config.app_id}", :request => options
         end
       rescue => e
         puts e

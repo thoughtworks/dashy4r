@@ -8,7 +8,7 @@ describe Dashy::RestInterface do
   let(:failure_report) { ({:success => false }).merge(options) }
   let(:dashy_local_url) do
     config = Dashy::Base.config
-    "#{config.url}/requests/#{config.app_id}"
+    "#{config.url}/api/requests/#{config.app_id}"
   end
 
   before(:all) do
