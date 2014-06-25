@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "dashy4r"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["ThoughtWorks"]
-  s.date = "2014-06-10"
+  s.date = "2014-06-25"
   s.description = "Intercept endpoint calls to notify a Dash server about endpoint status"
   s.email = "aduarte@thoughtworks.com"
   s.extra_rdoc_files = [
