@@ -3,7 +3,7 @@ require './lib/dashy4r'
 require 'webmock/rspec'
 
 describe Dashy::RestInterface do
-  let(:options) {{ :environment => 'test', :endpoint => 'a_service' }}
+  let(:options) {{ :meta => { :environment => 'test' }, :name => 'a_service' }}
   let(:success_report) { ({:success => true }).merge(options) }
   let(:failure_report) { ({:success => false }).merge(options) }
   let(:dashy_local_url) do
@@ -38,9 +38,11 @@ describe Dashy::RestInterface do
         :body =>
           {"request"=>
             {
-              "environment"=> options[:environment].to_s,
-              "endpoint"=> options[:endpoint].to_s,
-              "success"=> status[:success].to_s
+              "success"=> status[:success].to_s,
+              "meta"=> {
+                "environment"=> options[:meta][:environment].to_s
+              },
+              "name"=> options[:name].to_s
             }
           },
         :headers => {'Content-Type'=>'application/x-www-form-urlencoded'}

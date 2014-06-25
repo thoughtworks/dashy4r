@@ -40,14 +40,14 @@ A more complete Runner setup where you can set options and also validate the res
   require 'dashy4r'
 
   Dashy::Runner.config_and_run do |runner|
-    runner.with_options  :environment => 'My Environment', :endpoint => 'My Web Service'
+    runner.with_options  :name => 'My Web Service', :meta => { :environment => 'My Environment' }
     runner.block_to_run do
-      # your code goes here
-      run_something_that_you_want_to_report_status_and_returns_something
+      # your code goes here (example with success response)
+      1
     end
     runner.valid_response? do |response|
-      # your code goes here
-      validates_response_and_returns_a_boolean(response)
+      # your code goes here (example with some conditional)
+      response == 1
     end
   end
 ```
