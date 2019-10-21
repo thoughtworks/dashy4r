@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem 'system_timer', '~> 1.2.4'
 gem 'mime-types', '~> 1.16'
 gem 'rest-client', '~> 1.6.7'
-gem 'nokogiri', '~> 1.5.10'
+gem 'nokogiri', '~> 1.10.4'
 gem "webmock"
 
 group :development do
